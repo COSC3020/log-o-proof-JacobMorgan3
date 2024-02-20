@@ -12,8 +12,24 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$ <br />
-example one: <br />
-$T(n) = log_{2} (n)$ and $c = 1$ and $n_0 = 1$ and $n = 2$ <br />
-$log_{2}(2) = 1$ and $cf(n) 
 
-example two: <br />
+Let us say that: <br/>
+$T(n) = log_{5}(n)$ and $f(n) = log_{3}(n)$ and $c = 1$ and $n_0 = 1$ and $n = 2$ <br />
+
+$log_{5}(2) <= 1 * log_{3}(2)$ <br/>
+$.431 <= .631$ <br/>
+
+$log_{5}(n) \in O(log_{3}(n)$ <br/>
+
+Now Let us look at T(n) = $log_{3}(n)$: <br/>
+$T(n) = log_{3}(n)$ and $f(n) = log_{5}(n)$ and $c = 2$ and $n_0 = 1$ and $n = 2$ <br />
+
+$log_{3}(2) <= 2 * log_{5}(2)$ <br/>
+$.631 <= .862$ <br/>
+
+$log_{3}(n) \in O(log_{5}(n)$ <br/>
+
+Since both belong to the big O of each other it is irrelevant which base we use. 
+
+
+
