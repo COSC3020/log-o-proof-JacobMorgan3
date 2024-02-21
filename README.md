@@ -13,23 +13,17 @@ might help with the notation for mathematical expressions.
 
 $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$ <br />
 
-Let us say that: <br/>
-$T(n) = log_{5}(n)$ and $f(n) = log_{3}(n)$ and $c = 1$ and $n_0 = 1$ and $n = 2$ <br />
+We want to show that $O(log_5(n)) = O(log_2(n))$ <br/>
+### Case 1: $log_5(n) \in O(log_2(n))$ <br/>
+$log_5(n) = log_2(n) / log_2(5)$ <br/>
+$T(n) \leq cf(x)$
+$log_5(n) \leq c * (log_2(n) / log_2(5))$ <br/>
+$log_5(n) \leq c * log_2(n)$ <br/>
+$log_5(n) \in O(log_2(n))$ <br/>
 
-$log_{5}(2) <= 1 * log_{3}(2)$ <br/>
-$.431 <= .631$ <br/>
-
-$log_{5}(n) \in O(log_{3}(n)$ <br/>
-
-Now Let us look at T(n) = $log_{3}(n)$: <br/>
-$T(n) = log_{3}(n)$ and $f(n) = log_{5}(n)$ and $c = 2$ and $n_0 = 1$ and $n = 2$ <br />
-
-$log_{3}(2) <= 2 * log_{5}(2)$ <br/>
-$.631 <= .862$ <br/>
-
-$log_{3}(n) \in O(log_{5}(n)$ <br/>
-
-Since both belong to the big O of each other it is irrelevant which base we use. 
-
-
-
+### Case 2: $log_2(n) \in O(log_5(n))$ <br/>
+$log_2(n) = log_5(n) / log_5(2)$ <br/>
+$T(n) \leq cf(x)$
+$log_2(n) \leq c * (log_5(n) / log_5(2))$ <br/>
+$log_2(n) \leq c * log_5(n)$ <br/>
+$log_2(n) \in O(log_5(n))$ <br/>
