@@ -12,18 +12,6 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$ <br />
+<br />
 
-We want to show that $O(log_5(n)) = O(log_2(n))$ <br/>
-### Case 1: $log_5(n) \in O(log_2(n))$ <br/>
-$log_5(n) = log_2(n) / log_2(5)$ <br/>
-$T(n) \leq cf(x)$
-$log_5(n) \leq c * (log_2(n) / log_2(5))$ <br/>
-$log_5(n) \leq c * log_2(n)$ <br/>
-$log_5(n) \in O(log_2(n))$ <br/>
-
-### Case 2: $log_2(n) \in O(log_5(n))$ <br/>
-$log_2(n) = log_5(n) / log_5(2)$ <br/>
-$T(n) \leq cf(x)$
-$log_2(n) \leq c * (log_5(n) / log_5(2))$ <br/>
-$log_2(n) \leq c * log_5(n)$ <br/>
-$log_2(n) \in O(log_5(n))$ <br/>
+can i set $T(n) = log_a(n)$ ?
